@@ -56,6 +56,7 @@ main {
     display: flex;
     flex: 1;
     justify-content: space-around;
+    align-items: center;
     padding: 20px 0 100px;
 }
 
@@ -74,11 +75,17 @@ main {
     animation: check 5s linear infinite;
 }
 
-.container strong {
-    color: white;
+.container ul {
     font-size: 100px;
     font-weight: 700;
     padding: 5px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container li {
+    letter-spacing: 5px;
+    list-style: none;
     animation: card 5s linear infinite;
 }
 
@@ -96,7 +103,7 @@ main {
 .check form {
     display: flex;
     align-items: center;
-    width: 330px;
+    width: 400px;
     height: 50px;
     margin-top: 20px;
     border: 1px solid royalblue;
@@ -114,13 +121,18 @@ main {
     outline: none;
 }
 
+::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: italic;
+}
+
 .check form button {
-    padding: 15px 20px 15px;
+    padding: 13px 20px;
     background: royalblue;
-    border-radius: 0 18px 18px 0;
+    border-radius: 0 20px 20px 0;
     color: white;
-    font-weight: bold;
     outline: none;
+    font-size: 18px;
 }
 
 .check form button:hover {
@@ -130,9 +142,8 @@ main {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20px auto;
     background: royalblue;
-    padding: 30px 30px 150px;
+    padding: 30px;
 }
 
 footer .data {
@@ -141,19 +152,19 @@ footer .data {
     justify-items: center;
 }
 
-footer .brand {
+footer .company {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
 }
 
-footer .brand img {
+footer .company img {
     width: 50px;
     height: 50px;
     margin-right: 10px;
 }
 
-footer .brand h2 {
+footer .company h2 {
     font-style: italic;
     font-weight: 200;
 }
@@ -171,6 +182,15 @@ footer .social img {
 
 footer .credits h2{
     margin-bottom: 5px;
+}
+
+@media (min-height: 830px) {
+    footer {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 @keyframes check {
@@ -193,6 +213,34 @@ footer .credits h2{
     }
 }
 
+li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+li:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+li:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+li:nth-child(6) {
+    animation-delay: 1s;
+}
+
+li:nth-child(7) {
+    animation-delay: 1.2s;
+}
+
 @keyframes card {
     0% {
         color: blueviolet;
@@ -204,11 +252,13 @@ footer .credits h2{
     }
 
     50% {
+        letter-spacing: -5px;
         opacity: 1;
     }
 
     100% {
-        color: royalblue;
+        color: rgb(0, 180, 180);
+        letter-spacing: 5px;
         opacity: 0;
     }
 }
