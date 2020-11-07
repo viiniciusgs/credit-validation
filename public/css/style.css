@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    min-height: 100%;
-    background: rgb(255, 255, 255);
-}
-
 *, button, input {
     border: 0;
     background: none;
@@ -16,7 +11,17 @@ html {
     color: #000000;
 }
 
+html, body {
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -25,7 +30,8 @@ header {
 
 header img {
     width: 45px;
-    margin: 0 30px 0 30px;
+    height: 45px;
+    margin: 0 30px;
 }
 
 header a {
@@ -47,10 +53,10 @@ header a.button {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    padding: 20px 30px 70px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    padding: 20px 0 100px;
 }
 
 .container {
@@ -84,6 +90,7 @@ main {
 
 .check img {
     width: 400px;
+    height: 400px;
 }
 
 .check form {
@@ -98,6 +105,7 @@ main {
 
 .check form img {
     width: 35px;
+    height: 35px;
     margin: 0 15px 0 20px;
 }
 
@@ -107,7 +115,7 @@ main {
 }
 
 .check form button {
-    padding: 15px 20px 15px 15px;
+    padding: 15px 20px 15px;
     background: royalblue;
     border-radius: 0 18px 18px 0;
     color: white;
@@ -141,6 +149,7 @@ footer .brand {
 
 footer .brand img {
     width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -156,6 +165,7 @@ footer .social {
 
 footer .social img {
     width: 30px;
+    height: 30px;
     margin-right: 10px;
 }
 
@@ -185,7 +195,7 @@ footer .credits h2{
 
 @keyframes card {
     0% {
-        background: royalblue;
+        color: blueviolet;
         opacity: 0;
     }
 
@@ -198,7 +208,7 @@ footer .credits h2{
     }
 
     100% {
-        background: blueviolet;
+        color: royalblue;
         opacity: 0;
     }
 }
