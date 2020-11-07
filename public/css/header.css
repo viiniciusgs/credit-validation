@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid royalblue;
+}
+
+header img {
+    width: 45px;
+    height: 45px;
+    margin: 0 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: royalblue;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+header a:hover {
+    color: cornflowerblue;
+}
+
+header a.button {
+    background: royalblue;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}

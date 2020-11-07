@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, button, input {
+    border: 0;
+    background: none;
+    font-family: 'Nunito', sans-serif;
+    color: #000000;
+}
+
+html {
+    min-height: 100%;
+}

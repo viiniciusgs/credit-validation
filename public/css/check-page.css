@@ -1,0 +1,85 @@
+main {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0 300px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    list-style: none;
+    animation: check 5s linear infinite;
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.container li {
+    list-style: none;
+    letter-spacing: 5px;
+    animation: card 5s linear infinite;
+}
+
+.check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check img {
+    width: 400px;
+    height: 400px;
+}
+
+.check form {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid royalblue;
+    border-radius: 20px;
+}
+
+.check form img {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px 0 20px;
+}
+
+.check form input {
+    width: 80%;
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.check form button {
+    background: royalblue;
+    padding: 13px 20px;
+    border-radius: 0 20px 20px 0;
+    color: white;
+    outline: none;
+    font-size: 18px;
+}
+
+.check form button:hover {
+    cursor: pointer;
+}
