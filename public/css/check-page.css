@@ -16,7 +16,6 @@ main {
     font-weight: 700;
     line-height: 1.5;
     text-align: center;
-    list-style: none;
     animation: check 5s linear infinite;
 }
 
@@ -66,7 +65,11 @@ main {
     outline: none;
 }
 
-::-webkit-input-placeholder {
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+input[type=number]::-webkit-input-placeholder {
     font-size: 18px;
     font-style: italic;
 }

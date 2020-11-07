@@ -28,3 +28,7 @@ header a.button {
     padding: 10px;
     border-radius: 10px;
 }
+
+header a.button:hover {
+    background: rgb(55, 95, 215);
+}
