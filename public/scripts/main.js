@@ -27,6 +27,8 @@ function validationCredit() {
         var repeatJ = 1000000000000000;
 
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
+
+        localStorage.setItem('Card', 'American Express');
     }
 
     else if(Math.trunc(initialNumber) >= 51 && Math.trunc(initialNumber) <= 55) {
@@ -34,6 +36,8 @@ function validationCredit() {
         var repeatJ = 1000000000000000;
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
+
+        localStorage.setItem('Card', 'Mastercard');
     }
 
     else if(creditCard >= 4000000000000 && creditCard <= 5000000000000) {
@@ -41,6 +45,8 @@ function validationCredit() {
         var repeatJ = 10000000000000;
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
+
+        localStorage.setItem('Card', 'Visa');
     }
 
     else if(creditCard >= 4000000000000000 && creditCard <= 5000000000000000) {
@@ -48,10 +54,14 @@ function validationCredit() {
         var repeatJ = 1000000000000000;
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
+
+        localStorage.setItem('Card', 'Visa');
     }
 
     else {
-        console.log("INVÁLIDO");
+        alert('Número de cartão inválido'); 
+        inputElement.value = '';
+        return;
     }
 }
 
@@ -77,9 +87,12 @@ function luhnsAlgorithm(creditCard, repeatI, repeatJ) {
     }
 
     if(calculate % 10 == 0) {
-        console.log("VÁLIDO");
+        window.location.href = "/pages/credit-card.html"
+        inputElement.value = '';
     }
     else {
-        console.log("INVÁLIDO");
+        alert('Número de cartão inválido'); 
+        inputElement.value = '';
+        return;
     }
 }
