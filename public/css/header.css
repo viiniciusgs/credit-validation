@@ -19,7 +19,7 @@ header a {
 }
 
 header a:hover {
-    color: cornflowerblue;
+    color: rgb(55, 95, 215);
 }
 
 header a.button {
