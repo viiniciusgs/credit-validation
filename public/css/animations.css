@@ -1,42 +1,26 @@
-@keyframes check {
-    0% { 
-        color: royalblue;
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        color: cornflowerblue;
-        opacity: 0;
-    }
-}
-
 @keyframes card {
     0% {
-        color: blueviolet;
-        opacity: 0;
+        color: #4169E1;
     }
 
-    10% {
-        opacity: 1;
+    20% {
+        color: #F77F60;
     }
 
-    50% {
-        letter-spacing: -5px;
-        opacity: 1;
+    40% {
+        color: #4874F7;
+    }
+
+    60% {
+        color: #A0F72F;
+    }
+
+    80% {
+        color: #72AB29;
     }
 
     100% {
-        color: rgb(0, 180, 180);
-        letter-spacing: 5px;
-        opacity: 0;
+        color: #4169E1;
     }
 }
 
@@ -62,8 +46,4 @@ li:nth-child(5) {
 
 li:nth-child(6) {
     animation-delay: 1s;
-}
-
-li:nth-child(7) {
-    animation-delay: 1.2s;
 }

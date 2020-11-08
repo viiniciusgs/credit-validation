@@ -1,8 +1,10 @@
 main {
+    width: 100%;
     display: flex; 
+    flex: 1;
     justify-content: space-around;
     align-items: center;
-    padding: 20px 0 300px;
+    padding: 5rem;
 }
 
 .container {
@@ -12,75 +14,90 @@ main {
 }
 
 .container h1 {
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: 10rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -5px;
     text-align: center;
-    animation: check 5s linear infinite;
 }
 
 .container ul {
     display: flex;
     align-items: center;
-    padding: 5px 20px;
-    font-size: 100px;
-    font-weight: 700;
+
+    font-size: 10rem;
+    font-weight: 800;
 }
 
 .container li {
     list-style: none;
-    letter-spacing: 5px;
-    animation: card 5s linear infinite;
+
+    letter-spacing: -10px;
+
+    animation: card 10s linear infinite;
 }
 
 .check {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 35px;
+    background: #F7F7F7;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px #DEDEDE;
 }
 
 .check img {
-    width: 400px;
-    height: 400px;
+    width: 40rem;
+    height: 40rem;
+
+    margin-top: -2rem;
 }
 
 .check form {
     display: flex;
     align-items: center;
-    width: 400px;
-    height: 50px;
-    margin-top: 20px;
-    border: 1px solid royalblue;
+
+    width: 40rem;
+    height: 5rem;
+    margin-top: 15px;
+
+    border: 1px solid #4169E1;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px 1px #4874F7;
 }
 
 .check form img {
-    width: 40px;
-    height: 40px;
-    margin: 0 15px 0 20px;
+    width: 4rem;
+    height: 4rem;
+    margin: 0 10px 0 15px;
 }
 
 .check form input {
     width: 80%;
-    outline: none;
+}
+
+input[type=number]::-webkit-input-placeholder {
+    font-size: 1.8rem;
+    font-weight: 200;
+    font-style: italic;
 }
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-  }
-
-input[type=number]::-webkit-input-placeholder {
-    font-size: 18px;
-    font-style: italic;
 }
 
 .check form button {
-    background: royalblue;
-    padding: 13px 20px;
-    border-radius: 0 20px 20px 0;
+    font-size: 1.8rem;
+    font-weight: 200;
     color: white;
-    outline: none;
-    font-size: 18px;
+
+    background: #101A38;
+    padding: 1.4rem 1rem;
+    border-radius: 0 1.7rem 1.7rem 0;
+    box-shadow: 1px 1px 5px 1px #233878;
 }
 
 .check form button:hover {

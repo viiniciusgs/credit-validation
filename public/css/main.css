@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
 *, button, input {
     border: 0;
     background: none;
-    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    outline: none;
+    
+    font-family: 'Inter', sans-serif;
     color: #000000;
-}
-
-html {
-    min-height: 100%;
 }

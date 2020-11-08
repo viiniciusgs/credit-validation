@@ -2,33 +2,36 @@ header {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 2px solid royalblue;
+    border-bottom: 1px groove #4169E1;
 }
 
 header img {
-    width: 45px;
-    height: 45px;
-    margin: 0 30px;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0 20px 0 50px;
 }
 
-header a {
-    text-decoration: none;
-    color: royalblue;
-    font-weight: bold;
-    margin-right: 25px;
-}
+header a.buttonCurrentPage {
+    margin-right: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    background: #4169E1;
 
-header a:hover {
-    color: rgb(55, 95, 215);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
 }
 
 header a.button {
-    background: royalblue;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
+    margin-right: 20px;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4169E1;
 }
 
 header a.button:hover {
-    background: rgb(55, 95, 215);
+    color: #394361;
+
+    border-bottom: 1px solid #4169E1;
 }
