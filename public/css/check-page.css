@@ -78,6 +78,9 @@ main {
 
 .check form input {
     width: 80%;
+
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 input[type=number]::-webkit-input-placeholder {
