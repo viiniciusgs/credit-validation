@@ -18,15 +18,15 @@ mainElement.appendChild(elementResult);
 
 switch(getCard) {
     case "American Express":
-        imageCard = "/public/images/american-express.svg"
+        imageCard = "../public/images/american-express.svg"
         break;
     
     case "Mastercard":
-        imageCard = "/public/images/master-card.svg"
+        imageCard = "../public/images/master-card.svg"
         break;
 
     default:
-        imageCard = "/public/images/visa.svg"
+        imageCard = "../public/images/visa.svg"
         break;
 }
 

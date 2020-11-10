@@ -1,16 +1,17 @@
 main {
-    width: 100%;
     display: flex; 
     flex: 1;
     justify-content: space-around;
     align-items: center;
-    padding: 5rem;
+    padding: 5rem 5rem 15rem;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 1.5rem;
 }
 
 .container h1 {

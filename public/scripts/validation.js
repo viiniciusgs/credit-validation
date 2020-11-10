@@ -87,7 +87,7 @@ function luhnsAlgorithm(creditCard, repeatI, repeatJ) {
     }
 
     if(calculate % 10 == 0) {
-        window.location.href = "/pages/credit-card.html"
+        window.location.href = "../pages/credit-card.html"
         inputElement.value = '';
     }
     else {
