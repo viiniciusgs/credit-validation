@@ -28,7 +28,10 @@ function validationCredit() {
 
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
 
-        localStorage.setItem('Card', 'American Express');
+        localStorage.setItem('Card', JSON.stringify({
+            nameCard: 'American Express',
+            numberCard: creditCard.toString()
+        }));
     }
 
     else if(Math.trunc(initialNumber) >= 51 && Math.trunc(initialNumber) <= 55) {
@@ -37,7 +40,10 @@ function validationCredit() {
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
 
-        localStorage.setItem('Card', 'Mastercard');
+        localStorage.setItem('Card', JSON.stringify({
+            nameCard: 'Mastercard',
+            numberCard: creditCard.toString()
+        }));
     }
 
     else if(creditCard >= 4000000000000 && creditCard <= 5000000000000) {
@@ -46,7 +52,10 @@ function validationCredit() {
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
 
-        localStorage.setItem('Card', 'Visa');
+        localStorage.setItem('Card', JSON.stringify({
+            nameCard: 'Visa',
+            numberCard: creditCard.toString()
+        }));
     }
 
     else if(creditCard >= 4000000000000000 && creditCard <= 5000000000000000) {
@@ -55,7 +64,10 @@ function validationCredit() {
         
         luhnsAlgorithm(creditCard, repeatI, repeatJ);
 
-        localStorage.setItem('Card', 'Visa');
+        localStorage.setItem('Card', JSON.stringify({
+            nameCard: 'Visa',
+            numberCard: creditCard.toString()
+        }));
     }
 
     else {
