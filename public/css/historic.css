@@ -1,5 +1,38 @@
 main {
     display: flex;
     flex: 1;
-    padding: 2rem;
+    padding: 2rem 10rem;
+}
+
+.tableHistoric {
+    width: 100%;
+    background: #F7F7F7;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 1px #DEDEDE;
+}
+
+th.image {
+    width: 5vw;
+}
+
+th.nameCard {
+    width: 40vw;
+}
+
+th.numberCard {
+    width: 40vw;
+}
+
+td:first-child {
+    padding-left: 2rem;
+}
+
+td {
+    padding-right: 2rem;
+    font-size: 1.5rem;
+}
+
+td:nth-child(2) {
+    font-weight: 600;
 }

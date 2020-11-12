@@ -8,20 +8,20 @@ function showHistoric() {
         const table = document.createElement('tr')
         const image = document.createElement('img');
         image.setAttribute('src', card.imageCard);
-        const number = document.createTextNode(card.numberCard);
         const name = document.createTextNode(card.nameCard);
+        const number = document.createTextNode(card.numberCard);
 
         const columnImage = document.createElement('td');
-        const columnNumber = document.createElement('td');
         const columnName = document.createElement('td');
+        const columnNumber = document.createElement('td');
 
         columnImage.appendChild(image);
-        columnNumber.appendChild(number);
         columnName.appendChild(name);
+        columnNumber.appendChild(number);
 
         table.appendChild(columnImage);
-        table.appendChild(columnNumber);
         table.appendChild(columnName);
+        table.appendChild(columnNumber);
 
         tableHistoric.appendChild(table);
     }

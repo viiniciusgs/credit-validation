@@ -5,7 +5,8 @@ const elementResult = document.createElement('div');
 const elementCard = document.createElement('h2');
 const textCard = document.createTextNode(`Cartão ${getCard.nameCard}`);
 const elementValid = document.createElement('h1');
-const textValid = document.createTextNode('VÁLIDO');
+const textValid = document.createElement('img');
+textValid.setAttribute('src', '../public/images/verificado.svg');
 
 let imageCard = "";
 
@@ -37,8 +38,8 @@ mainElement.appendChild(elementImageCard);
 
 let historic = JSON.parse(localStorage.getItem('CardHistoric')) || [];
 historic.push({
-    nameCard: getCard.nameCard,
     imageCard: imageCard,
+    nameCard: getCard.nameCard,
     numberCard: getCard.numberCard
 });
 localStorage.setItem('CardHistoric', JSON.stringify(historic));
