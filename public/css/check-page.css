@@ -1,4 +1,5 @@
 main {
+    min-height: 100%;
     display: flex; 
     flex: 1;
     justify-content: space-around;
@@ -11,7 +12,7 @@ main {
     flex-direction: column;
     align-items: center;
 
-    padding: 1.5rem;
+    padding: 2rem;
 }
 
 .container h1 {
@@ -31,23 +32,17 @@ main {
 }
 
 .container li {
-    list-style: none;
-
     letter-spacing: -10px;
 
-    animation: card 10s linear infinite;
+    animation: cardAnimation 5s linear infinite;
 }
 
 .check {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 35px;
-    background: #F7F7F7;
-    border: 1px solid gainsboro;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 1px #DEDEDE;
+    padding: 3.5rem;
+    background: var(--white);
+    border: 1px solid var(--beau-blue);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px 1px var(--baby-blue-eyes);
 }
 
 .check img {
@@ -63,17 +58,16 @@ main {
 
     width: 40rem;
     height: 5rem;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 
-    border: 1px solid #4169E1;
-    border-radius: 20px;
-    box-shadow: 2px 2px 5px 1px #4874F7;
+    border: 1px solid var(--corante-indigo);
+    border-radius: 2rem;
 }
 
 .check form img {
     width: 4rem;
     height: 4rem;
-    margin: 0 10px 0 15px;
+    margin: 0 1rem 0 1.5rem;
 }
 
 .check form input {
@@ -96,12 +90,11 @@ input[type=number]::-webkit-inner-spin-button {
 .check form button {
     font-size: 1.8rem;
     font-weight: 200;
-    color: white;
+    color: var(--white);
 
-    background: #101A38;
+    background: var(--rich-black-fogra);
     padding: 1.4rem 1rem;
     border-radius: 0 1.7rem 1.7rem 0;
-    box-shadow: 1px 1px 5px 1px #233878;
 }
 
 .check form button:hover {

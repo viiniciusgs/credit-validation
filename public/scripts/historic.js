@@ -3,6 +3,15 @@ let historic = JSON.parse(localStorage.getItem('CardHistoric'));
 
 function showHistoric() {
     tableHistoric.innerHTML = '';
+    const apagarTodos = document.createElement('a');
+    apagarTodos.setAttribute('href', '#');
+    const deleteHistoricTodos = document.createElement('img');
+    deleteHistoricTodos.setAttribute('src', '../public/images/excluir.svg');
+    apagarTodos.setAttribute('onclick', 'deleteTodoHistorico()');
+
+    apagarTodos.appendChild(deleteHistoricTodos);
+    tableHistoric.appendChild(apagarTodos);
+    
     for(const card of historic) {
         const table = document.createElement('div');
         const image = document.createElement('img');
@@ -22,14 +31,6 @@ function showHistoric() {
         const deleteHistoric = document.createElement('img');
         deleteHistoric.setAttribute('src', '../public/images/excluir.svg');
 
-        const apagarTodos = document.createElement('a');
-        apagarTodos.setAttribute('href', '#');
-        const deleteHistoricTodos = document.createElement('img');
-        deleteHistoricTodos.setAttribute('src', '../public/images/excluir.svg');
-        apagarTodos.setAttribute('onclick', 'deleteTodoHistorico()');
-
-        apagarTodos.appendChild(deleteHistoricTodos);
-
         linkElement.appendChild(deleteHistoric);
 
         table.appendChild(image);
@@ -38,8 +39,6 @@ function showHistoric() {
         table.appendChild(linkElement);
 
         tableHistoric.appendChild(table);
-        tableHistoric.appendChild(apagarTodos);
-
     }
 }
 

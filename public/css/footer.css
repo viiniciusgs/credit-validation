@@ -1,57 +1,52 @@
 footer {
+    padding: 3rem;
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 30px;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-rows: 3fr 1fr 2fr;
+    grid-gap: 1rem;
 
-    background: #3A5DC7;
+    background: var(--aquamarine);
 }
 
-footer .data {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+footer .brandLogo img {
+    width: 4rem;
+    height: 4rem;
 }
 
-footer .company {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5rem;
+footer h1 {
+    margin-bottom: 1rem;
+
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
-footer .company img {
-    width: 6rem;
-    height: 6rem;
-    margin-right: 0.5rem;
-}
-
-footer .company h2 {
-    font-size: 3rem;
+footer h2 {
+    font-size: 1.5rem;
     font-weight: 200;
-    font-style: italic;
+}
+
+footer a {
+    font-weight: 400;
+}
+
+footer .line {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border-bottom: 1px solid black;
 }
 
 footer .social {
     display: flex;
-    align-items: center;
+    flex-direction: row-reverse;
+    grid-column-start: 4;
+    grid-column-end: 5;
 }
 
 footer .social img {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 1rem;
-}
-
-footer .credits h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-}
-
-footer .credits h2 {
-    font-size: 1.3rem;
-    font-weight: 400;
-}
-
-footer a {
-    font-weight: 600;
+    width: 3rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
 }

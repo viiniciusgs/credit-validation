@@ -1,5 +1,5 @@
-formElement = document.querySelector("#searchCard");
-inputElement = document.querySelector("#numberCard");
+formElement = document.querySelector('#searchCard');
+inputElement = document.querySelector('#numberCard');
 
 formElement.onsubmit = function(event) {
     event.preventDefault();
@@ -9,8 +9,8 @@ formElement.onsubmit = function(event) {
 function validationCredit() {
     const creditCard = inputElement.value;
     var initialNumber = creditCard;
-    var repeatI;
-    var repeatJ;
+    let repeatI;
+    let repeatJ;
 
     if(!creditCard) {
         alert('Digite um número de cartão'); 

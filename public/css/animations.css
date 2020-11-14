@@ -1,26 +1,14 @@
-@keyframes card {
+@keyframes cardAnimation {
     0% {
-        color: #4169E1;
+        color: var(--slate-blue);
     }
 
-    20% {
-        color: #F77F60;
-    }
-
-    40% {
-        color: #4874F7;
-    }
-
-    60% {
-        color: #A0F72F;
-    }
-
-    80% {
-        color: #72AB29;
+    50% {
+        color: var(--medium-turquoise);
     }
 
     100% {
-        color: #4169E1;
+        color: var(--slate-blue);
     }
 }
 

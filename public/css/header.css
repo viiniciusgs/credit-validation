@@ -1,25 +1,28 @@
 header {
+    padding: 1rem;
+    border-bottom: 1px groove var(--tufts-blue);
+}
+
+header nav {
     display: flex;
     align-items: center;
-    padding: 10px;
-    border-bottom: 1px groove #4169E1;
 }
 
 header img {
     width: 4.5rem;
     height: 4.5rem;
-    margin: 0 20px 0 50px;
+    margin: 0 2rem 0 5rem;
 }
 
 header a.buttonCurrentPage {
-    margin-right: 20px;
-    padding: 15px;
-    border-radius: 20px;
-    background: #4169E1;
+    margin-right: 2rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    background: var(--tufts-blue);
 
     font-size: 1.5rem;
     font-weight: 400;
-    color: #fff;
+    color: var(--rich-black-fogra);
 }
 
 header a.button {
@@ -27,11 +30,11 @@ header a.button {
 
     font-size: 1.5rem;
     font-weight: 400;
-    color: #4169E1;
+    color: var(--tufts-blue);
 }
 
 header a.button:hover {
-    color: #394361;
+    color: var(--rich-black-fogra);
 
-    border-bottom: 1px solid #4169E1;
+    border-bottom: 1px solid var(--tufts-blue);
 }
