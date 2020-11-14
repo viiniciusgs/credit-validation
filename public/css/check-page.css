@@ -37,6 +37,9 @@ main {
 }
 
 .check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 3.5rem;
     background: var(--white);
     border: 1px solid var(--beau-blue);
@@ -55,7 +58,7 @@ main {
     display: flex;
     align-items: center;
 
-    width: 40rem;
+    width: 35rem;
     height: 5rem;
     margin-top: 1.5rem;
 
@@ -66,7 +69,7 @@ main {
 .check form img {
     width: 4rem;
     height: 4rem;
-    margin: 0 1rem 0 1.5rem;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .check form input {
@@ -74,16 +77,6 @@ main {
 
     font-size: 2rem;
     font-weight: 200;
-}
-
-input[type=number]::-webkit-input-placeholder {
-    font-size: 1.8rem;
-    font-weight: 200;
-    font-style: italic;
-}
-
-input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
 }
 
 .check form button {
