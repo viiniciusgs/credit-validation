@@ -9,8 +9,8 @@ formElement.onsubmit = function(event) {
 function validationCredit() {
     const creditCard = inputElement.value;
     var initialNumber = creditCard;
-    let repeatI;
-    let repeatJ;
+    var repeatI;
+    var repeatJ;
 
     if(!creditCard) {
         alert('Digite um número de cartão'); 
