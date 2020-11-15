@@ -60,7 +60,7 @@ main {
 
     width: 35rem;
     height: 5rem;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0 1rem;
 
     border: 1px solid var(--corante-indigo);
     border-radius: 2rem;
@@ -79,16 +79,19 @@ main {
     font-weight: 200;
 }
 
-.check form button {
-    font-size: 1.8rem;
+.check button {
+    width: 35rem;
+    height: 5rem;
+    border-radius: 2rem;
+
+    background: var(--tufts-blue);
+
+    font-size: 2rem;
     font-weight: 200;
     color: var(--white);
-
-    background: var(--rich-black-fogra);
-    padding: 1.4rem 1rem;
-    border-radius: 0 1.7rem 1.7rem 0;
 }
 
-.check form button:hover {
+.check button:hover {
     cursor: pointer;
+    background: var(--slate-blue);
 }

@@ -39,7 +39,7 @@ html, body {
     outline: none;
     
     font-family: 'Inter', sans-serif;
-    color: #000000;
+    color: var(--rich-black-fogra);
 }
 
 input[type=number]::-webkit-inner-spin-button {

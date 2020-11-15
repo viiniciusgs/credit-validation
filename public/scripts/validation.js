@@ -1,8 +1,13 @@
 formElement = document.querySelector('#searchCard');
 inputElement = document.querySelector('#numberCard');
+buttonElement = document.querySelector('#buttonSearchCard');
 
 formElement.onsubmit = function(event) {
     event.preventDefault();
+    validationCredit();
+}
+
+buttonElement.onclick = function() {
     validationCredit();
 }
 
