@@ -4,11 +4,13 @@ main {
     padding: 2rem;
 }
 
-.tableHistoric {
+
+
+.containerHistoric {
     width: 100%;
 }
 
-.tableHistoric div {
+.historic {
     display: flex;
     align-items: center;
     background: #F7F7F7;
@@ -18,7 +20,7 @@ main {
     margin-bottom: 1rem;
 }
 
-.tableHistoric img {
+.containerHistoric img {
     width: 3vw;
     margin-left: 1rem;
 }

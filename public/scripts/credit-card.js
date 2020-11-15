@@ -41,6 +41,6 @@ let historic = JSON.parse(localStorage.getItem('searchHistory')) || [];
 historic.push({
     imageCard: imageCard,
     nameCard: getCard.nameCard,
-    numberCard: getCard.numberCard
+    cardNumber: getCard.cardNumber
 });
 localStorage.setItem('searchHistory', JSON.stringify(historic));

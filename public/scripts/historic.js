@@ -1,56 +1,60 @@
-const tableHistoric = document.querySelector('.tableHistoric');
+const elementHistoric = document.querySelector('.containerHistoric');
 let historic = JSON.parse(localStorage.getItem('searchHistory'));
 
 function showHistoric() {
-    tableHistoric.innerHTML = '';
-    const apagarTodos = document.createElement('a');
-    apagarTodos.setAttribute('href', '#');
-    const deleteHistoricTodos = document.createElement('img');
-    deleteHistoricTodos.setAttribute('src', '../public/images/excluir.svg');
-    apagarTodos.setAttribute('onclick', 'deleteTodoHistorico()');
+    elementHistoric.innerHTML = '';
 
-    apagarTodos.appendChild(deleteHistoricTodos);
-    tableHistoric.appendChild(apagarTodos);
+    const containerClearHistoric = document.createElement('div');
+    containerClearHistoric.setAttribute('class', 'clearHistoric');
+    const clearHistoric = document.createElement('a');
+    clearHistoric.setAttribute('href', '#');
+    clearHistoric.setAttribute('onclick', 'clearAllHistoric()');
+    const elementClearHistoric = document.createElement('h1');
+    const textClearHistoric = document.createTextNode('Limpar dados de navegação');
+
+    elementClearHistoric.appendChild(textClearHistoric);
+    clearHistoric.appendChild(elementClearHistoric);
+    containerClearHistoric.appendChild(clearHistoric);
+    elementHistoric.appendChild(containerClearHistoric);
     
-    for(const card of historic) {
-        const table = document.createElement('div');
-        const image = document.createElement('img');
-        image.setAttribute('src', card.imageCard);
-        const nameText = document.createElement('h1');
-        const numberText = document.createElement('h2');
-        const name = document.createTextNode(card.nameCard);
-        const number = document.createTextNode(card.numberCard);
+    for(const cardHistoric of historic) {
+        const historicDiv = document.createElement('div');
+        historicDiv.setAttribute('class', 'historic');
+        const imageCardHistoric = document.createElement('img');
+        imageCardHistoric.setAttribute('src', cardHistoric.imageCard);
+        const nameCardHistoric = document.createElement('h1');
+        const numberCardHistoric = document.createElement('h2');
+        const textNameCardHistoric = document.createTextNode(cardHistoric.nameCard);
+        const textNumberCardHistoric = document.createTextNode(cardHistoric.cardNumber);
 
-        nameText.appendChild(name);
-        numberText.appendChild(number);
+        nameCardHistoric.appendChild(textNameCardHistoric);
+        numberCardHistoric.appendChild(textNumberCardHistoric);
 
-        const linkElement = document.createElement('a');
-        linkElement.setAttribute('href', '#');
-        var pos = historic.indexOf(card);
-        linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
-        const deleteHistoric = document.createElement('img');
-        deleteHistoric.setAttribute('src', '../public/images/excluir.svg');
+        const linkElementDelete = document.createElement('a');
+        linkElementDelete.setAttribute('href', '#');
+        let position = historic.indexOf(cardHistoric);
+        linkElementDelete.setAttribute('onclick', 'clearHistoric(' + position + ')');
+        const imageDeleteHistoric = document.createElement('img');
+        imageDeleteHistoric.setAttribute('src', '../public/images/excluir.svg');
 
-        linkElement.appendChild(deleteHistoric);
-
-        table.appendChild(image);
-        table.appendChild(nameText);
-        table.appendChild(numberText);
-        table.appendChild(linkElement);
-
-        tableHistoric.appendChild(table);
+        linkElementDelete.appendChild(imageDeleteHistoric);
+        historicDiv.appendChild(imageCardHistoric);
+        historicDiv.appendChild(nameCardHistoric);
+        historicDiv.appendChild(numberCardHistoric);
+        historicDiv.appendChild(linkElementDelete);
+        elementHistoric.appendChild(historicDiv);
     }
 }
 
 showHistoric();
 
-function deleteTodo(pos) {
-    historic.splice(pos, 1);
+function clearHistoric(position) {
+    historic.splice(position, 1);
     showHistoric();
     saveToStorage();
 }
 
-function deleteTodoHistorico() {
+function clearAllHistoric() {
     historic = [];
     showHistoric();
     saveToStorage();
