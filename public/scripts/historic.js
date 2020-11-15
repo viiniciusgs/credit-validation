@@ -1,5 +1,5 @@
 const tableHistoric = document.querySelector('.tableHistoric');
-let historic = JSON.parse(localStorage.getItem('CardHistoric'));
+let historic = JSON.parse(localStorage.getItem('searchHistory'));
 
 function showHistoric() {
     tableHistoric.innerHTML = '';
@@ -57,5 +57,5 @@ function deleteTodoHistorico() {
 }
 
 function saveToStorage() {
-    localStorage.setItem('CardHistoric', JSON.stringify(historic));
+    localStorage.setItem('searchHistory', JSON.stringify(historic));
 }

@@ -1,21 +1,22 @@
 mainElement = document.querySelector('#main');
 
 const getCard = JSON.parse(localStorage.getItem('Card'));
-const elementResult = document.createElement('div');
-const elementCard = document.createElement('h2');
-const textCard = document.createTextNode(`Cartão ${getCard.nameCard}`);
-const elementValid = document.createElement('h1');
-const textValid = document.createElement('img');
-textValid.setAttribute('src', '../public/images/verificado.svg');
+
+const divResult = document.createElement('div');
+
+const textElementNameCard = document.createElement('h1');
+const textNameCard = document.createTextNode(`Cartão ${getCard.nameCard}`);
+
+const imageValid = document.createElement('img');
+imageValid.setAttribute('src', '../public/images/verificado.svg');
 
 let imageCard = "";
 
-elementCard.appendChild(textCard);
-elementValid.appendChild(textValid);
-elementResult.appendChild(elementCard);
-elementResult.appendChild(elementValid);
+textElementNameCard.appendChild(textNameCard);
+divResult.appendChild(textElementNameCard);
+divResult.appendChild(imageValid);
 
-mainElement.appendChild(elementResult);
+mainElement.appendChild(divResult);
 
 switch(getCard.nameCard) {
     case "American Express":
@@ -36,10 +37,10 @@ elementImageCard.setAttribute('src', imageCard);
 
 mainElement.appendChild(elementImageCard);
 
-let historic = JSON.parse(localStorage.getItem('CardHistoric')) || [];
+let historic = JSON.parse(localStorage.getItem('searchHistory')) || [];
 historic.push({
     imageCard: imageCard,
     nameCard: getCard.nameCard,
     numberCard: getCard.numberCard
 });
-localStorage.setItem('CardHistoric', JSON.stringify(historic));
+localStorage.setItem('searchHistory', JSON.stringify(historic));
