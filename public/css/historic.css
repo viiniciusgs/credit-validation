@@ -4,23 +4,63 @@ main {
     padding: 2rem;
 }
 
-
-
 .containerHistoric {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.clearHistoric {
+    position: absolute;
+    top: 8rem;
+    right: 2rem;
+}
+
+.clearHistoric h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--corante-indigo);
+    
+    border-bottom: 1px solid var(--rich-black-fogra);
 }
 
 .historic {
+    width: clamp(60rem, 50vw, 80rem);
     display: flex;
     align-items: center;
-    background: #F7F7F7;
+    background: var(--white);
     border: 1px solid gainsboro;
     border-radius: 5px;
-    box-shadow: 1px 1px 5px 1px #DEDEDE;
-    margin-bottom: 1rem;
+    box-shadow: 1px 1px 5px 1px var(--beau-blue);
+    margin: 1rem 0;
+    position: relative;
 }
 
-.containerHistoric img {
-    width: 3vw;
-    margin-left: 1rem;
+.historic img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 3rem 0 3rem;
+}
+
+.historic h1 {
+    margin-right: 3rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.historic h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.historic a img {
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
 }

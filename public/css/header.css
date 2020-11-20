@@ -25,6 +25,10 @@ header a.buttonCurrentPage {
     color: var(--rich-black-fogra);
 }
 
+header a.buttonCurrentPage:hover {
+    opacity: 0.9;
+}
+
 header a.button {
     margin-right: 20px;
 
