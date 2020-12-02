@@ -16,10 +16,21 @@
 <body>
     <header>
         <nav>
-            <img src="../public/images/logo.svg" alt="Logo">
-
-            <a href="../index.html" class="button">Página inicial</a>
-            <a href="historic.html" class="button">Histórico</a>
+            <a href="index.html">
+                <img src="/public/images/logo.svg" alt="Logo">
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="../index.html" class="button">Página inicial</a></li>
+                <li><a href="/pages/historic.html" class="button">Histórico</a></li>
+                <li><a href="#about" class="button">Sobre</a></li>
+            </ul>
+ 
+            <div class="hamburguer">
+                <div class="line"></div>                
+                <div class="line"></div>                
+                <div class="line"></div>                
+            </div>
         </nav>
     </header>
 
@@ -27,6 +38,7 @@
         
     </main>
 
+    <script src="../public/scripts/navbar.js"></script>
     <script src="../public/scripts/credit-card.js"></script>
 </body>
 </html>

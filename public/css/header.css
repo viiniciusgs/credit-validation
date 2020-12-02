@@ -14,6 +14,10 @@ header img {
     margin: 0 2rem 0 5rem;
 }
 
+.nav-links {
+    display: flex;
+}
+
 header a.buttonCurrentPage {
     margin-right: 2rem;
     padding: 1.5rem;
@@ -41,4 +45,97 @@ header a.button:hover {
     color: var(--rich-black-fogra);
 
     border-bottom: 1px solid var(--tufts-blue);
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0;
+        border: none;
+    }
+
+    header nav {
+        align-items: initial;
+        position: relative;
+        background: var(--tufts-blue);
+    }
+
+    header img {
+        margin: .5rem 3rem;
+    }
+
+    .nav-links {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        background: var(--tufts-blue);
+        pointer-events: all;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .nav-links li a {
+        text-transform: uppercase;
+    }
+
+    header a.buttonCurrentPage {
+        margin: 0;
+        padding: 0;
+
+        background: initial;
+        border-bottom: 2px solid var(--white);
+        border-radius: 0;
+        color: var(--white);
+    }
+
+    header a.button {
+        margin: 0;
+
+        color: var(--white);
+    }
+
+    .hamburguer {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .line {
+        width: 2rem;
+        height: .2rem;
+        background: var(--white);
+        margin: .3rem;
+    }
 }

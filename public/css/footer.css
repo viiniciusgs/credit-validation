@@ -50,3 +50,9 @@ footer .social img {
     margin-top: 1rem;
     margin-right: 0.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: none;
+    }
+}
