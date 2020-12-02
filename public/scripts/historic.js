@@ -55,9 +55,13 @@ function clearHistoric(position) {
 }
 
 function clearAllHistoric() {
-    historic = [];
-    showHistoric();
-    saveToStorage();
+    if(window.confirm("Você realmente deseja limpar o histórico de pesquisas?")) {
+        historic = [];
+        showHistoric();
+        saveToStorage();
+    } else {
+        showHistoric();
+    }
 }
 
 function saveToStorage() {
