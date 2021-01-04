@@ -22,10 +22,27 @@ main h1 {
 
 main div img {
     width: 10rem;
-    height: 10rem;
 }
 
 main img {
     width: 50rem;
-    height: 50rem;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 2rem;
+    }
+
+    main div {
+        margin: initial;
+    }
+
+    main h1 {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    main img {
+        width: 30rem;
+    }
 }
