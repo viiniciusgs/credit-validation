@@ -53,6 +53,10 @@ footer .social img {
 
 @media screen and (max-width: 768px) {
     footer {
-        display: none;
+        display: initial;
+    }
+
+    footer h1 {
+        margin: 2rem 0 1rem;
     }
 }

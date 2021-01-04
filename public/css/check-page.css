@@ -49,7 +49,6 @@ main {
 
 .check img {
     width: 40rem;
-    height: 40rem;
 
     margin-top: -2rem;
 }
@@ -98,6 +97,48 @@ main {
 
 @media screen and (max-width: 768px) {
     main {
+        padding: 5rem 2rem;
+        flex-direction: column;
+    }
+
+    .container {
+        padding: initial;
+    }
+
+    .container h1 {
+        font-size: 6rem;
+    }
+
+    .container ul {
+        font-size: 6rem;
+    }
+
+    .check {
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+
+    .check img {
+        width: 25rem;
+        margin-top: initial;
+    }
+
+    .check form {
+        width: 90%;
+    }
+
+    .check form img {
         display: none;
+    }
+
+    .check form input {
+        width: 100%;
+
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .check button {
+        width: 90%;
     }
 }

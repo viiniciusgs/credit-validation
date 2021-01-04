@@ -96,7 +96,7 @@ header a.button:hover {
     }
 
     .nav-links li:nth-child(3) {
-        transition: all 0.5s ease 0.6s;
+        display: none;
     }
 
     li.fade {

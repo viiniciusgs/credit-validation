@@ -14,15 +14,9 @@ html, body {
 :root {
     font-size: 62.5%;
 
-    /* --purple: #7400B8; */
-    /* --french-violet: #6930C3; */
     --slate-blue: #5E60CE;
     --tufts-blue: #5390D9;
-/*     --blue-jeans: #4EA8DE;
-    --vivid-sky-blue: #48BFE3;
-    --sky-blue-crayola: #56CFE1; */
     --medium-turquoise: #64DFDF;
- /*    --turquoise: #72EFDD; */
     --aquamarine: #80FFDB;
 
     --rich-black-fogra: #06090E;
