@@ -41,7 +41,7 @@ main {
 .historic img {
     width: 4rem;
     height: 4rem;
-    margin: 0 3rem 0 3rem;
+    margin: 0 3rem;
 }
 
 .historic h1 {
@@ -63,4 +63,28 @@ main {
     position: absolute;
     top: 1.5rem;
     right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .historic {
+        width: initial;
+    }
+
+    .historic img {
+        margin: 0 1rem;
+    }
+
+    .historic h1 {
+        margin-right: 1rem;
+
+        font-size: 1.5rem;
+    }
+
+    .historic h2 {
+        font-size: 1.5rem;
+    }
+
+    .historic a img {
+        display: none;
+    }
 }
